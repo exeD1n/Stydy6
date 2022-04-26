@@ -20,6 +20,7 @@ def parsing_csv():
     else:
         iterator = ((a,b) for a,b in zip_longest(user_array, hobby_array))
         info = dict(iterator)
+        print("Код выполнен успешно")
     
     with open ('info.txt', 'r+', encoding='UTF-8') as f:
         f.write(str(info))
