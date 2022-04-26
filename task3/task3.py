@@ -15,7 +15,7 @@ def parsing_csv():
     
     if len(hobby_array) > len(user_array):
         print("Ключей больше чем значений")
-        sys.exit()
+        sys.exit(1)
         
     else:
         iterator = ((a,b) for a,b in zip_longest(user_array, hobby_array))
