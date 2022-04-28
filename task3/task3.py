@@ -8,6 +8,7 @@ def parsing_csv():
     user_array = []
     for us in user_open:
         user_array.append(us.replace(","," ").rstrip())
+    print(user_array)
     
     hobby_array = []
     for hb in hobby_open:
